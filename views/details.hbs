@@ -1,0 +1,19 @@
+<div class ="row" id = "details-container">
+    <img src="{{movieDetails.image}}" alt="movie" class="col-md-3">
+
+    <div class = "col-md-6 d-flex flex-column align-items-start justify-content-around">
+        <a href="/movies">Go back</a>
+        <h2>{{movieDetails.title}}</h2>
+        <h3>{{movieDetails.director}}</h3>
+        <p>Stars</p>
+        <ul>
+            {{#each movieDetails.stars}}
+                <li>{{this}}</li>
+            {{/each}}
+        </ul>
+        <p>{{movieDetails.description}}</p>
+        {{#each movieDetails.showtimes}}
+            <p>{{this}}</p>
+        {{/each}}
+    </div>
+</div>
