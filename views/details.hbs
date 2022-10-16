@@ -12,8 +12,10 @@
             {{/each}}
         </ul>
         <p>{{movieDetails.description}}</p>
-        {{#each movieDetails.showtimes}}
-            <p>{{this}}</p>
-        {{/each}}
+        <div class ="d-flex flex-row">
+            {{#each movieDetails.showtimes}}
+                <p>{{this}} |</p>
+            {{/each}}
+        </div>
     </div>
 </div>
